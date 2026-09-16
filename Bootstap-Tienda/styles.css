@@ -1,0 +1,18 @@
+
+.navbar{
+
+    border-bottom: 1px solid #e0e0e0;
+    padding: 24px 40px;
+}
+.navbar-title {
+    color: #000000;
+    margin: 0 0 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+.header-con{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
