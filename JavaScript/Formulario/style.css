@@ -1,0 +1,55 @@
+/* Estilo básico */
+body {
+  font-family: Arial, sans-serif;
+  background: #23003f;
+}
+ 
+#contenedor {
+  width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgb(172, 145, 206);
+  border: 1px solid #ccc;
+}
+ 
+.campo {
+  margin-bottom: 15px;
+}
+ 
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+ 
+.campo-check label {
+  display: inline;
+}
+ 
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+ 
+.invalido {
+  border: 1px solid red;
+}
+ 
+.error {
+  display: block;
+  color: red;
+  font-size: 12px;
+}
+ 
+button {
+  padding: 8px 16px;
+}
+ 
+#mensaje {
+  display: none;
+  margin-top: 15px;
+  color: green;
+}

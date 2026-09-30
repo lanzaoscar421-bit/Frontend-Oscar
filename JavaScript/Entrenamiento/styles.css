@@ -1,0 +1,28 @@
+.container {
+
+    background-color: #dd8e8e;
+
+
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.button {
+    background-color: #864a4a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+}
