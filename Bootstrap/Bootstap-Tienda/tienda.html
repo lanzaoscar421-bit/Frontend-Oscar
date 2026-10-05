@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title href="index.html">Productos - Agoodshop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid container">
+            <a class="navbar-brand fw-semibold">agoodshop</a>
+
+            <div class="d-flex align-items-center gap-3 ms-auto">
+                <a class="nav-link d-none d-md-block" href="#">Accesorios</a>
+                <a class="nav-link d-none d-md-block" href="#">Soporte</a>
+                <a href="carrito.html" class="btn btn-outline-success d-none d-md-block" type="submit">Carrito</a>
+                <button class="btn btn-outline-success d-none d-md-block" type="submit">Contactar</button>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid px-4 py-4 bg-white text-black">
+
+
+        <h6>Productos</h6>
+
+        <div class="row g-3 mb-5">
+            <div class="col-3">
+                <div class="card bg-white text-black border-secondary h-100" style="cursor:pointer"
+                    data-bs-toggle="modal" data-bs-target="#modalNike">
+                    <img src="Img/airmax.jpg" class="card-img-top" style="height:160px; object-fit:cover;">
+                    <div class="card-body p-2">
+                        <p class="mb-1 small fw-bold">Iphone 13</p>
+                        <p class="mb-1 fw-bold text-warning">500€</p>
+                        <p class="mb-0 text-secondary" style="font-size:0.8rem;"> Iphone 13 128GB, en perfecto estado y ademas al mejor precio del mercado.</p>
+                        <button btn btn-outline-success>Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            // http://localhost:8080/api/carrito
+
+    </div>
+
+</body>
+
+</html>
