@@ -1,0 +1,26 @@
+body{
+
+    margin: 20vh;
+    background-color: #796a6a;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.parrafo{
+   
+    text-align: center;
+    font-size: 10rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #08016d;
+}
+.btn{
+
+    padding: 10pt;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
