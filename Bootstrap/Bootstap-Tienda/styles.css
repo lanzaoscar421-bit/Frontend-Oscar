@@ -61,3 +61,71 @@
     cursor: pointer;
     margin-left: 20px;
 }
+
+.carrito {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.productos {
+    flex: 1;
+}
+
+
+.cabecera,
+.fila {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    align-items: center;
+}
+
+.cabecera {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fila {
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.fila h3 {
+    margin: 0 0 5px;
+}
+
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cantidad button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cantidad input {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+
+.resumen {
+    width: 300px;
+    padding: 20px;
+    background-color: #fafafa;
+    align-self: flex-start;
+}
+
+.resumen p {
+    display: flex;
+    justify-content: space-between;
+}
