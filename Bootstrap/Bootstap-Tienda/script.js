@@ -4,6 +4,7 @@ import Carrito from "./carrito.js";
 
 const lista = document.getElementById("lista-productos");
 const total = document.getElementById("total-carrito");
+const resumenProductos = document.getElementById("resumen-productos");
 
 let carrito;
 
@@ -30,12 +31,6 @@ async function inicializarCarrito() {
     }
 }
 
-
-function pintarTotal() {
-    
-    const datos = carrito.obtenerCarrito();
-    total.textContent = datos.total.toFixed(2) + datos.currency;
-}
 
 
 function crearFila(producto) {
@@ -103,6 +98,41 @@ function crearFila(producto) {
     });
 
     return fila;
+}
+
+function pintarTotal() {
+
+    const datos = carrito.obtenerCarrito();
+
+    total.textContent = datos.total.toFixed(2) + datos.currency;
+
+    resumenProductos.replaceChildren();
+
+    for(const producto of datos.products){
+
+
+        if(producto.unidades > 0){
+
+            const linea = document.createElement("p");
+
+            const nombre = document.createElement("span");
+
+            nombre.textContent = producto.title + " x " + producto.unidades;
+
+            const precio = document.createElement("span");
+
+            precio.textContent =  (producto.price * producto.unidades).toFixed(2) + datos.currency;
+
+
+            linea.append(nombre, precio);
+
+            resumenProductos.appendChild(linea);
+
+        }
+
+    }
+
+
 }
 
 
