@@ -15,17 +15,12 @@ export class BlogComponent {
     constructor() {
         this.arrNoticias = [
             {
-                titulo: "Bienvenidos al blog",
-                imagen: "https://picsum.photos/seed/uno/600/300",
-                texto: "Esta es la primera noticia de nuestro blog hecho con Angular.",
+                titulo: "Ibanez RG470DX Tokyo Midnight",
+                imagen: "https://www.matguitars.com/52178-superlarge_default/ibanez-rg470dx-tokyo-midnight.jpg",
+                texto: "Top 5 Guitarras de 2026",
                 fecha: "2026-11-01"
-            },
-            {
-                titulo: "Aprendiendo Angular",
-                imagen: "https://picsum.photos/seed/dos/600/300",
-                texto: "Componentes, data binding y control flow en una SPA.",
-                fecha: "2026-11-05"
             }
+
         ];
 
         this.newNoticia = {
@@ -59,14 +54,14 @@ export class BlogComponent {
     cargarDatos(): string {
         let html: string = "";
         this.arrNoticias.forEach(noticia => {
-            html += `<article class="card mb-4">
-                        <img src="${noticia.imagen}" class="card-img-top" alt="${noticia.titulo}">
-                        <div class="card-body">
-                            <h3 class="card-title">${noticia.titulo}</h3>
-                            <p class="card-text">${noticia.texto}</p>
-                            <small class="text-muted">Publicado el ${noticia.fecha}</small>
-                        </div>
-                    </article>`;
+            html += `<article class="card shadow-sm border-0 mb-4">
+            <img src="${noticia.imagen}" class="card-img-top" alt="${noticia.titulo}" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h3 class="card-title fw-bold">${noticia.titulo}</h3>
+                <p class="card-text">${noticia.texto}</p>
+                <small class="text-muted">Publicado el ${noticia.fecha}</small>
+            </div>
+        </article>`;
         });
         return html;
     }
