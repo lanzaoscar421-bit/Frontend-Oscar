@@ -1,0 +1,10 @@
+.formulario {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.formulario label {
+    font-weight: 600;
+}
